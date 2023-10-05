@@ -1,0 +1,88 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-color: #333;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	scroll-behavior: smooth;
+
+	.slider {
+		display: flex;
+		width: 60%;
+		height: 20vh;
+		top: 70%;
+		position: fixed;
+		border: 2px solid greenyellow;
+		border-radius: 10px;
+		box-shadow: 0 0 10px 10px greenyellow;
+		overflow-x: scroll;
+
+		.slider-element {
+			background-color: black;
+			height: 100%;
+			flex: 0 0 40%;
+			border: 1px solid white;
+			transition: transform 0.5s;
+			background-position: center;
+		}
+		.slider-element:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	.img {
+		flex-grow: 1;
+		background-size: cover;
+		background-position: center;
+		height: 800px;
+		width: 100%;
+		border: 1px solid white;
+	}
+}
+.img0 {
+	background-image: url('https://images.pexels.com/photos/3635300/pexels-photo-3635300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+.img1 {
+	background-image: url('https://images.pexels.com/photos/2907/car-mustang.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+.img2 {
+	background-image: url('https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+.img3 {
+	background-image: url('https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+.img4 {
+	background-image: url('https://images.pexels.com/photos/36762/scarlet-honeyeater-bird-red-feathers.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+.img5 {
+	background-image: url('https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+.img6 {
+	background-image: url('https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+.img7 {
+	background-image: url('https://images.pexels.com/photos/33045/lion-wild-africa-african.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+.img8 {
+	background-image: url('https://images.pexels.com/photos/1563355/pexels-photo-1563355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+.img9 {
+	background-image: url('https://images.pexels.com/photos/45853/grey-crowned-crane-bird-crane-animal-45853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+@media (max-width: 500px) {
+  .wrapper .slider {
+        width: 100%;
+        height: 30vh;
+    }
+    
+}
